@@ -15,7 +15,9 @@ print(array[0])
 [1,2,3]
 """
 print(array[0][2])
+print(array[0,2])
 """
+3
 3
 """
 
