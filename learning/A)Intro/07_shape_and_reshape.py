@@ -100,3 +100,24 @@ try:
 	array.reshape(8)
 except Exception as e:
 	print("Can not reshape it to 8 dim")
+
+
+
+
+
+print("________________")
+print("________________")
+print("Falttening Arrays")
+print("________________")
+print("________________")
+
+array = np.array([[1,2,3,4],[5,6,7,8]])
+
+newarr1 = array.reshape(-1)
+
+print(newarr1)
+# [1 2 3 4 5 6 7 8]
+
+
+
+
