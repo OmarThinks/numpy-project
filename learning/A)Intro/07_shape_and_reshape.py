@@ -42,3 +42,61 @@ print(array5[0,0,0,0,2]) # 7
 
 
 
+
+print("________________")
+print("________________")
+print("________________")
+print("________________")
+print("________________")
+print("---RESHAPING----")
+print("________________")
+print("________________")
+print("________________")
+print("________________")
+print("________________")
+
+
+
+
+
+array = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+
+
+newarr1 = array.reshape(4,3)
+
+print(array)
+# [ 1  2  3  4  5  6  7  8  9 10 11 12]
+print(newarr1)
+"""[[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]]
+
+"""
+print(newarr1.base) # It is a view
+# [ 1  2  3  4  5  6  7  8  9 10 11 12]
+
+
+newarr2 = array.reshape(3,2,2)
+
+print(newarr2)
+"""
+[[[ 1  2]
+  [ 3  4]]
+
+ [[ 5  6]
+  [ 7  8]]
+
+ [[ 9 10]
+  [11 12]]]
+"""
+
+
+
+
+
+
+try:
+	array.reshape(8)
+except Exception as e:
+	print("Can not reshape it to 8 dim")
